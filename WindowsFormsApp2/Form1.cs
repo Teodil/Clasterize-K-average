@@ -180,6 +180,7 @@ namespace WindowsFormsApp2
                         Controls.Add(PointDataX[i]);
                         Controls.Add(PointDataY[i]);
                         Controls.Add(AddCenterMassBTN[i]);
+                        Application.DoEvents();
                         Refresh();
                         Thread.Sleep(1);
                     }
@@ -237,7 +238,7 @@ namespace WindowsFormsApp2
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            pictureBox1.Refresh();
         }
 
         private void button2_Click(object sender, EventArgs e)
